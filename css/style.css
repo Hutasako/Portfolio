@@ -1,0 +1,160 @@
+body,
+html {
+  height: 100%;
+  transition: 0.3s;
+}
+
+.navbar {
+  list-style-type: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: #333;
+  width: 100%;
+  padding-top: 12px;
+  height: 50px;
+}
+
+.navbar li {
+  padding-top: 25px;
+  display: inline;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 75px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/zq-lee-VbDjv8-8ibc-unsplash-day.jpg');
+  transition: 0.3s;
+
+  /* Height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+  .navbar {
+    height: 150px;
+    padding-left: 0%;
+  }
+  .navbar li {
+    padding-top: 25px;
+    display: block;
+  }
+}
+
+.parallax.darkmode {
+  background-image: url('../images/zq-lee-DcyL0IoCY0A-unsplash-night.jpg');
+  transition: 0.3s;
+}
+
+.darkmode {
+  background-color: #111;
+  color: white;
+  transition: 0.5s;
+}
+
+.darkmode h1,
+.darkmode h2,
+.darkmode h3,
+.darkmode h4,
+.darkmode h5 {
+  color: white;
+}
+
+/* 
+  Fancy dark/light theme switcher 
+  Source: https://codepen.io/jkantner/pen/XEzWGr
+*/
+#switcher {
+  padding: 0 10px;
+}
+
+.l {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.75em;
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
+  color: #fdea7b;
+  display: inline-flex;
+  align-items: center;
+  margin: auto;
+  padding: 0.15em;
+  width: 3em;
+  height: 1.5em;
+  transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.l:before,
+.l:after {
+  content: "";
+  display: block;
+}
+
+.l:before {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  z-index: 1;
+}
+
+.l:after {
+  background:
+    linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50% / 50% 100%,
+    repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50% / 50% 100%,
+    radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+  background-repeat: no-repeat;
+  border: 0.25em solid transparent;
+  border-left: 0.4em solid #d8d8d8;
+  border-right: 0 solid transparent;
+  transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+  transform: translateX(-22.5%);
+  transform-origin: 25% 50%;
+  width: 1.2em;
+  height: 1em;
+}
+
+/* Checked */
+.l:checked {
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
+}
+
+.l:checked:before {
+  background-color: currentColor;
+  transform: translateX(125%)
+}
+
+.l:checked:after {
+  border-left-color: currentColor;
+  transform: translateX(-2.5%) rotateY(180deg);
+}
