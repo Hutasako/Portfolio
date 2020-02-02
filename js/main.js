@@ -45,9 +45,13 @@ const checkBox = document.getElementById("switcherCheckbox");
 
 checkBox.addEventListener('change', (event) => {
     if (event.target.checked){
+        //darkmode OFF
+        document.getElementById("github-logo").src = "./images/GitHub-Mark-120px-plus.png"
         document.body.classList.toggle('darkmode')
         $parallaxElement.classList.toggle('darkmode')
     } else {
+        //darkmode ON
+        document.getElementById("github-logo").src = "./images/GitHub-Mark-Light-120px-plus.png"
         document.body.classList.toggle('darkmode')
         $parallaxElement.classList.toggle('darkmode')
     }

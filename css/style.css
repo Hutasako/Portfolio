@@ -68,6 +68,10 @@ a.anchor {
   }
 }
 
+#linkedin-logo{
+  max-width: 120px;
+}
+
 .parallax.darkmode {
   background-image: url('../images/zq-lee-DcyL0IoCY0A-unsplash-night.jpg');
   transition: 0.3s;
