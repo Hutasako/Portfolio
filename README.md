@@ -2,5 +2,7 @@
 My website! :)
 
 Library(ies) used:
-* Primitive CSS boilerplate
+* Skeleton CSS boilerplate
 * Typed JS
+
+Images used belong to their rightful owner, sourced from Unsplash.com.
