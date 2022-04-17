@@ -104,12 +104,12 @@ a.anchor {
   }
 
   .navbar {
-    height: 150px;
+    /* height: 150px; */
     padding-left: 0%;
   }
 
   .navbar li {
-    padding-top: 25px;
+    /* padding-top: 25px; */
     display: block;
   }
 }
