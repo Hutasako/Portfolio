@@ -119,6 +119,10 @@ a.anchor {
 .margin-top-5 {
   margin-top: 5em;
 }
+
+h1,h2,h3,h4,h5,h6 {
+  color: #002C73;
+}
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .parallax {
@@ -161,7 +165,9 @@ a.anchor {
 .darkmode h2,
 .darkmode h3,
 .darkmode h4,
-.darkmode h5 {
-  color: white;
+.darkmode h5,
+.darkmode h6
+{
+  color: #E9CDDC;
 }
 
