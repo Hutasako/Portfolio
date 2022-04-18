@@ -134,6 +134,12 @@ a.anchor {
     /* padding-top: 25px; */
     display: block;
   }
+  .project{
+    margin: 1em 0;
+  }
+  .media{
+    margin: 0;
+  }
 }
 
 #linkedin-logo {
