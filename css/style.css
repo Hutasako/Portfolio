@@ -96,7 +96,29 @@ a.anchor {
   z-index: 0;
 } */
 
+.text-center {
+  text-align: center;
+}
 
+.border {
+  border: solid 1px silver;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.border-rounded {
+  border-radius: 5px;
+}
+
+.padding-2 {
+  padding: 2em;
+}
+
+.margin-top-5 {
+  margin-top: 5em;
+}
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .parallax {
